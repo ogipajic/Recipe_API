@@ -1,0 +1,17 @@
+/* Body font style and font size */
+body {
+    font-size: 2rem;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background: url(Assets/agriculture-background-bell-pepper-broccoli-1414651.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Font and image within jumbotron */
+.jumbotron {
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background: url('Assets/board-bunch-cooking-food-349609.jpg');
+    background-position: center center;
+    background-size: cover;
+}

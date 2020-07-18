@@ -1,0 +1,41 @@
+/* Body font style and font size */
+body {
+    font-family: 'Annie Use Your Telescope', cursive;
+    background-image: url(Assets/carrots-food-fresh-freshness-616404.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Font and image within jumbotron */
+.jumbotron {
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background: url(Assets/agriculture-bright-cereal-close-up-547263.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.panel-heading {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.panel-body {
+    text-align: center;
+}
+
+  @media screen and (max-width: 768px) {
+    .jumbotron {
+      padding-top:20px;
+      padding-bottom:20px;
+    }
+  }
+
+
+

@@ -1,0 +1,19 @@
+/* Body font style and font size */
+body {
+    font-size: 2rem;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background-image: url(Assets/agriculture-bright-cereal-close-up-547263.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Font and image within jumbotron */
+.jumbotron {
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    background: url('Assets/board-bunch-cooking-food-349609.jpg');
+    background-position: center center;
+    background-size: cover;
+}

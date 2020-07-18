@@ -1,0 +1,24 @@
+{
+  "name": "recipe_api",
+  "version": "1.0.0",
+  "description": "Fonts: <link href=\"https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Lemon&display=swap\" rel=\"stylesheet\">",
+  "main": "ncscript.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "animate.css": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Llenrocc/Recipe_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Llenrocc/Recipe_API/issues"
+  },
+  "homepage": "https://github.com/Llenrocc/Recipe_API#readme"
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Lemon&display=swap" rel="stylesheet">
+  <title>What's In My Fridge?</title>
+  <!-- Fixes issue of text extending past card length-->
+  <style>
+      .card-body a {
+          word-break: break-all;
+      }
+      .recipeHeadLine {
+          line-height: 1.5;
+      }
+  </style>
+</head>
+<body>
+
+    <form id = "newForm">
+        
+        <div class="header">      
+      <h1 class="display-4">What's In My Fridge?</h1>
+      <p class="lead">Search For Recipes With Ingredients Found In Your Fridge.</p>
+            </div>
+          </div>
+     <div class="container">  
+     <form>
+          <div class="row">
+              <div class="col-sm-6">
+        <div class="form-group">
+          <label for="search">Main Ingredient</label>
+          <input type="text" class="form-control" id="main-ingredient" placeholder="must be filled out">
+        </div>
+              </div>
+              <div class="col-sm-6">
+        <div class="form-group">
+            <label for="search">Ingredient 2</label>
+            <input type="text" class="form-control" id="ingredient-2" placeholder="optional">
+          </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+          <div class="form-group">
+            <label for="search">Ingredient 3 </label>
+            <input type="text" class="form-control" id="ingredient-3" placeholder="optional">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label for="search">Ingredient 4</label>
+            <input type="text" class="form-control" id="ingredient-4" placeholder="optional">
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </form>
+    </form>
+    
+    <div class="container">
+        <div class="form-group">
+            <label for="pwd">Number of Recipes</label>
+            <select id="recipe-count" class="custom-select" aria-labelledby="dropdownMenuButton">
+              <option selected value="1">1</option>
+              <!-- Setting the option for 5 as default -->
+              <option value="5" selected>5</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+        
+          <div class="row">
+            
+            <!--buttons -->
+            <button type="submit" id="run-search" class="btn btn-primary btn-lg btn-block">SEARCH</button>
+            <p id="results"></p>
+            <button type="button" id="clear-all" class="btn btn-secondary btn-lg btn-block"
+            onclick = "newFunction()" value = "clear">CLEAR
+            </button>
+            </div>  
+        </div>
+    </div>
+    
+    <form class="container">
+      <!-- handle all of the retrieved recipes -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        <div class="card">
+          <!-- card Heading for the retrieved recipes box -->
+          <div class="card-header">
+           <i class="fa fa-table"></i> R e c i p e s
+          </div>
+          <!-- This main card will hold each of the resulting recipes -->
+          <div class="card-body" id="recipe-section"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+ <script src="ncscript.js"></script>
+</body>
+</html>
